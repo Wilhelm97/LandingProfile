@@ -1,0 +1,36 @@
+landing page will replace sava as my chrome landingpage(home page)
+
+key points of change
+- Better UI
+- Better navbar w/ user navbar links
+- Better todo list
+- taking out the blog feature(maybe)
+- different login style
+- Profile will be set up differently.
+
+
+
+- dynamic background
+- different daily quotes
+- try to connect to a search engine like google or edge
+- icons for each website link in navbar
+
+Todo
+- name, description, time created and due date(if needed)
+
+database rules
+- td_id
+- td_name
+- td_text
+- user_name
+- td_time
+- td_due
+
+to get the favicon from website, look for domain.com/favicon.ico (This Will help with the saved links)
+
+2021-02-13 - worked on layout
+
+
+BUGS
+- Responsive navbar doesn't show button after shrinked
+- Signup and login  dont collapse with the rest of the navbar
