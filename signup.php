@@ -9,7 +9,7 @@ if (isset($_POST) & !empty($_POST)) {
         $password = md5($_POST['password']);
         $usertype = 'user';
         $sql = "INSERT INTO users (user_name, user_password)
-    VALUES ('$username','$password', 'false')";
+    VALUES ('$username','$password')";
         if ($conn->query($sql) === true) {
             header("location: signin.php");
         } else {

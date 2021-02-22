@@ -26,8 +26,23 @@ session_start();
             </button>
             <!-- add users name when logged in on the far left corner -->
             <div class="collapse navbar-collapse" id="navBar">
-                <a class="navbar-brand" href="profile">Users Name</a>
+                <?php
+            require_once('./config/_conn.php');
+            if (!isset($_SESSION['username'])) {
+            } else {
+                $check = "SELECT * FROM users where user_name = '$_SESSION[username]' ";
+                $result = $conn->query($check);
 
+                if ($result->num_rows == 1) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo "
+                        <a class='navbar-brand' href='profile'>" . $row["user_name"] . "</a>
+                    ";
+                    }
+                }
+            }
+
+            ?>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <!-- https://www.youtube.com/favicon.ico -->
@@ -54,7 +69,7 @@ session_start();
                 <a class="nav-link" href="signup">Signup</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="signin">Login</a>
+                <a class="nav-link" href="signin">Signin</a>
             </li>
         </ul>
     </div>
