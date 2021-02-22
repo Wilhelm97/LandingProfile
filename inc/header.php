@@ -39,7 +39,7 @@ session_start();
                     </li>
                     <li class="nav-item">
                         <!-- https://github.com/favicon.ico -->
-                        <a class="nav-link" href="https://github.com/">Github/a>
+                        <a class="nav-link" href="https://github.com/">Github</a>
                     </li>
                 </ul>
             </div>
