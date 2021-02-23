@@ -1,7 +1,7 @@
 <?php include './inc/header.php' ?>
 <?php
 if (isset($_SESSION['username'])) {
-    session_destroy();
+    header("location: profile");
 }
 require_once('./config/_conn.php'); // connection to the database
 if (isset($_POST) & !empty($_POST)) {
