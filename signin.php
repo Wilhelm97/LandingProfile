@@ -27,26 +27,43 @@ if (isset($_SESSION['username'])) {
 }
 ?>
 
-<!-- content -->
-<div class="container">
 
-    <form class="form" role="form" autocomplete="off" id="formLogin" method="POST">
-        <div class="form-group">
-            <label for="text">User Name:</label>
-            <input type="text" class="form-control" name="username">
+
+
+
+<div class="container">
+    <!-- body content -->
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center">Signin</h2>
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off" id="formLogin" method="POST">
+                                <div class="form-group">
+                                    <label for="text">User Name:</label>
+                                    <input type="text" class="form-control" name="username" placeholder="username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" name="password" placeholder="password">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+
         </div>
-        <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" name="password">
-        </div>
-        <!-- <div class="form-group form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember me
-            </label>
-        </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <!--/col-->
+    </div>
+    <!--/row-->
+    <!--/container-->
 </div>
+
 
 
 

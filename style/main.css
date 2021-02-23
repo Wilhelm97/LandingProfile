@@ -1,6 +1,15 @@
-/* body {
-  background-image: url(./bgPic/mt1.jpg);
-} */
+body {
+  background-image: url(./bgPic/pexels-jakub-novacek-924824.jpg);
+  background-size: cover;
+  /* color: lightskyblue; */
+  color: white;
+}
 #timeDate {
   text-align: center;
+}
+.nav-link {
+  color: white;
+}
+.navbar-brand {
+  color: white;
 }

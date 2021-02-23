@@ -64,9 +64,25 @@ if (isset($_POST) & !empty($_POST)) {
     <!--/row-->
     <!--/container-->
 
+</div>
+
+
+<div class="container">
+    <h2 style="text-align:center;">Features</h2>
+    </br>
+    <div class="row">
+        <div class="col-4">
+            <h3>You favorite News</h3>
+        </div>
+        <div class="col-4">
+            <h3>See your commute with google maps</h3>
+        </div>
+        <div class="col-4">
+            <h3>Get updated on your youtubers uploads</h3>
+        </div>
+    </div>
+</div>
 
 
 
-
-
-    <?php include './inc/footer.php' ?>
+<?php include './inc/footer.php' ?>

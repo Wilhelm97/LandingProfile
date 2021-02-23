@@ -19,7 +19,7 @@ session_start();
     </head>
 
     <body onload=timeDate();>
-        <nav class="navbar navbar-expand-sm bg-light">
+        <nav class="navbar navbar-expand-sm bg-info nav-custom">
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar">
                 <span class="navbar-toggler-icon"></span>
@@ -43,18 +43,19 @@ session_start();
             }
 
             ?>
+                <a class='navbar-brand' href='index'>Home</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <!-- https://www.youtube.com/favicon.ico -->
-                        <a class="nav-link" href="https://www.youtube.com/">Youtube</a>
+                        <a class="nav-link" href="https://www.youtube.com/" target="_blank">Youtube</a>
                     </li>
                     <li class="nav-item">
                         <!-- https://www.google.com/favicon.ico -->
-                        <a class="nav-link" href="https://www.google.ca/">Google</a>
+                        <a class="nav-link" href="https://www.google.ca/" target="_blank">Google</a>
                     </li>
                     <li class="nav-item">
                         <!-- https://github.com/favicon.ico -->
-                        <a class="nav-link" href="https://github.com/">Github</a>
+                        <a class="nav-link" href="https://github.com/" target="_blank">Github</a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +64,7 @@ session_start();
         if (!isset($_SESSION['username'])) {
             echo '
 
-        <div class="navbar-nav" id="Navbar">
+        <div class="navbar-nav" id="navBar">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="signup">Signup</a>
@@ -79,7 +80,7 @@ session_start();
         } elseif (isset($_SESSION['username'])) {
 
             echo '
-            <div class="navbar-nav" id="Navbar" >
+            <div class="navbar-nav" id="navBar" >
             <ul class="navbar-nav">
             <li class="nav-item">
             <a class="nav-link" href="blog">Blog</a>
