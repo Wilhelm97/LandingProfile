@@ -43,13 +43,15 @@ if (isset($_SESSION['username'])) {
                             <form class="form" role="form" autocomplete="off" id="formLogin" method="POST">
                                 <div class="form-group">
                                     <label for="text">User Name:</label>
-                                    <input type="text" class="form-control" name="username" placeholder="username">
+                                    <input type="text" class="form-control" name="username" placeholder="Username">
                                 </div>
                                 <div class="form-group">
                                     <label for="pwd">Password:</label>
-                                    <input type="password" class="form-control" name="password" placeholder="password">
+                                    <input type="password" class="form-control" name="password" placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn-md float-right">Signin</button>
+                                </div>
                             </form>
                         </div>
                     </div>

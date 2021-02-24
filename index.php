@@ -5,5 +5,4 @@
 <div class="container" style="background-color: lightgrey;">
     <h2>news on programming, maybe some youtubes videos</h2>
 </div>
-<h4 id="quotes"></h4>
 <?php include './inc/footer.php' ?>

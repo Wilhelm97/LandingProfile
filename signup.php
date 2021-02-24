@@ -11,7 +11,7 @@ if (isset($_POST) & !empty($_POST)) {
         $sql = "INSERT INTO users (user_name, user_password)
     VALUES ('$username','$password')";
         if ($conn->query($sql) === true) {
-            header("location: signin.php");
+            header("location: signin");
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -48,8 +48,7 @@ if (isset($_POST) & !empty($_POST)) {
                                             placeholder="password (again)">
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit"
-                                            class="btn btn-success btn-lg float-right">Register</button>
+                                        <button type="submit" class="btn btn-success btn-md float-right">Signup</button>
                                     </div>
                             </form>
                         </div>
