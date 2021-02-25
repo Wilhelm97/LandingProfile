@@ -18,3 +18,16 @@ function timeDate(){
     document.getElementById("timeDate").innerHTML = date1;
     refreshTime();
 }
+
+// focus on the todo name
+document.getElementById("name").focus();
+// submitting with the enter key
+var input = document.getElementById("todo");
+
+input.addEventListener("keyup", function(event) {
+    // 13 = enter
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("focusSubmit").click();
+  }
+});
