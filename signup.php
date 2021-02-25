@@ -33,7 +33,8 @@ if (isset($_POST) & !empty($_POST)) {
                             <form class="form" role="form" action="signup.php" method="POST" autocomplete="off">
                                 <div class="form-group">
                                     <label for="username">User Name:</label>
-                                    <input type="text" class="form-control" name="username" placeholder="john">
+                                    <input type="text" class="form-control" id="name" name="username"
+                                        placeholder="john">
                                 </div>
                                 <div class="form-group">
                                     <div class="form-group">
@@ -44,11 +45,12 @@ if (isset($_POST) & !empty($_POST)) {
                                     </div>
                                     <div class="form-group">
                                         <label for="rePassword">Verify Password:</label>
-                                        <input type="password" class="form-control" name="confpass"
+                                        <input type="password" class="form-control" id="focusSubmit" name="confpass"
                                             placeholder="password (again)">
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-success btn-md float-right">Signup</button>
+                                        <button type="submit" id="focusSubmit"
+                                            class="btn btn-success btn-md float-right">Signup</button>
                                     </div>
                             </form>
                         </div>

@@ -7,6 +7,10 @@ body {
 #timeDate {
   text-align: center;
 }
+a:hover {
+  color: black;
+  font-weight: bold;
+}
 .nav-link {
   color: white;
 }

@@ -4,7 +4,7 @@
 <div class="container">
     <!-- <h2 style="text-align: center;">Todos</h2> -->
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <h1>Add to Todo List</h1>
             <form method="post" action="td_dir.php">
                 <div class="form-group">
@@ -15,10 +15,10 @@
                     <label for="todo">Todo:</label>
                     <textarea class="form-control" rows="2" name="todo" id="todo"></textarea>
                 </div>
-                <button type="submit" name="submit" value="submit" class="btn btn-info">Submit</button>
+                <button type="submit" name="submit" id="focusSubmit" value="submit" class="btn btn-info">Submit</button>
             </form>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h1>Todo list</h1>
             <table style="background-color:white;" class='table table-hover'>
                 <thead>
@@ -43,11 +43,11 @@
 
                             echo "
 
-                    <tr>
+                    <tr class='tr_cl'>
                       <td>" . $row["td_name"] . "</td>
                       <td>" . $row["td_text"] . "</td>
                       <td>
-                      <div class='btn-group'><a class='btn btn-info' href='td_upd.php?id=" . $row["td_id"] . "?>'
+                      <div class='btn-group'><a class='btn btn-primary' href='td_upd.php?id=" . $row["td_id"] . "?>'
                     role='button'>EDIT</a>
                     <a class='btn btn-danger' href='td_del.php?id=" . $row["td_id"] . "?>' role='button'>Delete</a>
         </div>
