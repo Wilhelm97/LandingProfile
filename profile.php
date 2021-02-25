@@ -2,10 +2,9 @@
 <div id="timeDate"></div>
 
 <div class="container">
-    <!-- <h2 style="text-align: center;">Todos</h2> -->
     <div class="row">
         <div class="col-md-4">
-            <h1>Add to Todo List</h1>
+            <h3 class="text-info">Add to Todo</h3>
             <form method="post" action="td_dir.php">
                 <div class="form-group">
                     <label for="todo">Name:</label>
@@ -18,9 +17,9 @@
                 <button type="submit" name="submit" id="focusSubmit" value="submit" class="btn btn-info">Submit</button>
             </form>
         </div>
-        <div class="col-md-8">
-            <h1>Todo list</h1>
-            <table style="background-color:white;" class='table table-hover'>
+        <div style="overflow:auto; height:600px;" class="col-md-8">
+            <h3 class="text-info">Todo</h3>
+            <table style="background-color:white; " class='table table-hover'>
                 <thead>
                     <tr>
                         <th>Todo Name:</th>

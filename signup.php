@@ -40,8 +40,7 @@ if (isset($_POST) & !empty($_POST)) {
                                     <div class="form-group">
                                         <label for="password">Password:</label>
                                         <input type="password" class="form-control" name="password"
-                                            placeholder="password"
-                                            title="At least 6 characters with letters and numbers">
+                                            placeholder="password">
                                     </div>
                                     <div class="form-group">
                                         <label for="rePassword">Verify Password:</label>
@@ -65,25 +64,23 @@ if (isset($_POST) & !empty($_POST)) {
     <!--/row-->
     <!--/container-->
 
-</div>
 
-
-<div class="container">
-    <h2 style="text-align:center;">Features</h2>
-    </br>
-    <div class="row">
-        <div class="col-4">
-            <h3>You favorite News</h3>
-        </div>
-        <div class="col-4">
-            <h3>See your commute with google maps</h3>
-        </div>
-        <div class="col-4">
-            <h3>Get updated on your youtubers uploads</h3>
+    <div class="container">
+        <h2 style="text-align:center;">Features</h2>
+        </br>
+        <div class="row">
+            <div class="col-4">
+                <h3>You favorite News</h3>
+            </div>
+            <div class="col-4">
+                <h3>See your commute with google maps</h3>
+            </div>
+            <div class="col-4">
+                <h3>Get updated on your youtubers uploads</h3>
+            </div>
         </div>
     </div>
-</div>
 
 
 
-<?php include './inc/footer.php' ?>
+    <?php include './inc/footer.php' ?>

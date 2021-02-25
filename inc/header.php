@@ -57,7 +57,13 @@ session_start();
                         <!-- https://github.com/favicon.ico -->
                         <a class="nav-link" href="https://github.com/" target="_blank">Github</a>
                     </li>
+                    <li class="nav-item">
+                        <!-- https://w3school.com/favicon.ico -->
+                        <a class="nav-link" href="https://www.w3schools.com/default.asp" target="_blank">W3school</a>
+                    </li>
                 </ul>
+
+
             </div>
             <?php
         require_once('./config/_conn.php');
@@ -82,11 +88,21 @@ session_start();
             echo '
             <div class="navbar-nav" id="navBar" >
             <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="blog">Blog</a>
-        </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="profile">Profile</a>
+                    <a class="nav-link" href="blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings">Profile</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navBarDrop" data-toggle="dropdown">
+                  Settings
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="account">Account</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="signout">Signout</a>
