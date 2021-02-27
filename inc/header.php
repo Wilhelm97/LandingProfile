@@ -92,7 +92,7 @@ session_start();
                     <a class="nav-link" href="blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="settings">Profile</a>
+                    <a class="nav-link" href="profile">Profile</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navBarDrop" data-toggle="dropdown">
