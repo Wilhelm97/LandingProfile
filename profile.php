@@ -46,9 +46,10 @@
                       <td>" . $row["td_name"] . "</td>
                       <td>" . $row["td_text"] . "</td>
                       <td>
-                      <div class='btn-group'><a class='btn btn-primary' href='td_upd.php?id=" . $row["td_id"] . "?>'
+                      <div class='btn-group'><a class='btn btn-outline-primary' href='td_upd.php?id=" . $row["td_id"] . "?>'
                     role='button'>EDIT</a>
-                    <a class='btn btn-danger' href='td_del.php?id=" . $row["td_id"] . "?>' role='button'>Delete</a>
+                    <a class='btn btn-outline-danger' href='td_del.php?id=" . $row["td_id"] . "?>'
+                        role='button'>Delete</a>
         </div>
         </td>
 
