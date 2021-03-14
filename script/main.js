@@ -31,3 +31,5 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("focusSubmit").click();
   }
 });
+// add a function that organizes id dateUp by time submitted 
+

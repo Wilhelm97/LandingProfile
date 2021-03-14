@@ -80,7 +80,7 @@ session_start();
             </li>
         </ul>
     </div>
-</nav>
+
 
         ';
         } elseif (isset($_SESSION['username'])) {
@@ -109,7 +109,8 @@ session_start();
                 </li>
             </ul>
         </div>
-    </nav>';
+';
         }
         ?>
-            <br>
+        </nav>
+        <br>

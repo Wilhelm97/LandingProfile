@@ -1,6 +1,6 @@
 <?php include './inc/header.php' ?>
 <div id="timeDate"></div>
-
+<!-- TODO LIST: -->
 <div class="container">
     <div class="row">
         <div class="col-md-4">
@@ -88,7 +88,7 @@
 
 </div>
 </div>
-
+<!-- BLOG -->
 <div class="container">
     <!-- <h2 style="text-align: center;" class="text-info">Blog</h2> -->
     <div class="row">
@@ -110,7 +110,7 @@
 
 
         <div style="overflow:auto; height:500px;" class="container col-sm-8">
-            <h3 class="text-info">Blog</h3>
+            <h3><a class="text-info" href="./blog">Blog</a></h3>
             <?php
             require_once('./config/_conn.php');
             if (!$conn) {
@@ -127,7 +127,7 @@
             <div class="card-body" style="color:black;">
                 <h4 class="card-title">' . $row['bl_title'] . '</h4>
                 <p class="card-text text-center"><p> ' . $row['bl_cnt'] . ' </ p></p>
-                <p class="card-text text-center"><small> ' . $row['bl_userName'] . ' ' . $row['bl_created'] . '</small></p>
+                <p class="card-text text-center" id="dateUp"><small> ' . $row['bl_userName'] . ' ' . $row['bl_created'] . '</small></p>
             </div>
         </div>
             </br>
