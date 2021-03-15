@@ -64,7 +64,8 @@
                     if (isset($_POST['submit']) & !empty($_POST['submit'])) {
                         $blogTitle = mysqli_real_escape_string($conn, $_POST['title']);
                         $blogText = mysqli_real_escape_string($conn, $_POST['blog']);
-                        $sql = "INSERT INTO blog (bl_title,bl_cnt,bl_userName) VALUES ('$blogTitle','$blogText','$_SESSION[username]')";
+                        $blogType = mysqli_real_escape_string($conn, $_POST['type']);
+                        $sql = "INSERT INTO blog (bl_title,bl_type,bl_cnt,bl_userName) VALUES ('$blogTitle','$blogType','$blogText','$_SESSION[username]')";
                         if ($conn->query($sql) === true) {
                             echo ' <div class="container">
                                     <div class="alert alert-primary alert-dismissible">
@@ -81,12 +82,14 @@
                         }
                     }
 
+
                     ?>
         </tbody>
         </table>
     </div>
 
 </div>
+</br>
 </div>
 <!-- BLOG -->
 <div class="container">
@@ -99,6 +102,12 @@
                     <!-- <label for="title">Title</label> -->
                     <input type="text" class="form-control" placeholder="Title" name="title" id="title">
                 </div>
+                <select name="type" id="type" class="custom-select mb-3">
+                    <option selected value="NotePad">NotePad</option>
+                    <option value="Ideas">Ideas</option>
+                    <option value="Important">Important</option>
+                    <option value="Other">Other</option>
+                </select>
                 <div class="form-group">
                     <!-- <label for="blog">Post:</label> -->
                     <textarea class="form-control" rows="3" placeholder="Content" name="blog" id="blog"></textarea>
@@ -116,7 +125,7 @@
             if (!$conn) {
                 die("Connection failed: ");
             }
-            $mysql = "SELECT * FROM blog";
+            $mysql = "SELECT * FROM blog WHERE bl_type = 'Important'";
             $results = mysqli_query($conn, $mysql);
             if (mysqli_num_rows($results) > 0) {
                 // output data of each row
